@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+}
+
+.container,
+.profile-img,
+.profile-info,
+.profile-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  flex: 1 1 auto;
+  width: 380px;
+  padding: 1.7rem;
+  gap: .7rem;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 12%);
+}
+
+.container .profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: hsl(0, 0%, 20%);
+}
+
+
+.profile-info {
+  gap: 1.3rem;
+  margin-top: 10px;
+}
+
+.profile-info h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.profile-info .p-header>p {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(75, 94%, 57%);
+}
+
+.profile-info>p {
+  font-size: 14px;
+}
+
+.profile-links {
+  justify-content: center;
+  width: 100%;
+  max-width: 375px;
+  gap: 1rem;
+}
+
+.profile-links .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 47px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: hsl(0, 0%, 20%);
+  transition: .5s ease;
+}
+
+
+.profile-links .btn:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 80%;
+  }
+}
